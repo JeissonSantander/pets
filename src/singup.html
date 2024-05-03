@@ -5,17 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets | New user</title>
     <link rel="icon" type="image/png " href="../src/icons/icons-pets.avif">
-<body>
-    <center>
-        <img src="images/documento.png" width=" 100" >
-    </center>
+    <link rel="stylesheet" href="../landing/css/style.css">
+    <body>
+    
+    <!-- 
     <form name="signup-form" action="backend/singup.php" method="post">
         <table border="0" align="center">
             <tr><td><input type="text" name="fname" placeholder="Full Name" required></td></tr>
             <tr><td><input type="email" name="email" placeholder="Email" required></td></tr>
             <tr><td><input type="password" name="passwd" placeholder="********" required></td></tr>
             <tr><td align="center"><button>Register</button></td></tr>
+            <tr><td> <a href="signin.html" >Go to login</a></td></tr>
         </table>
-    </form>
+    </form> -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Pets</span>Store</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="../landing/index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="price.html" class="nav-item nav-link">Price</a>
+                    <a href="booking.html" class="nav-item nav-link">Booking</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="../src/signin.html" class="nav-item nav-link">sing in</a>
+                    
+					
+                </div>
+                <a href="" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+            </div>
+        </nav>
+    </div><br><br>
+    <center>
+        <img src="images/documento.png" width=" 100" >
+    </center>
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 mb-5">
+            <div class="contact-form">
+                <div id="success"></div>
+                
+                <form name="signup-form" action="backend/singup.php" method="post">
+                    <div class="control-group">
+                        <input type="text" class="form-control p-4" name="fname" placeholder="Full Name" required>
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control p-4" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="control-group">
+                        <input type="password" class="form-control p-4" name="passwd" placeholder="********" required>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary py-3 px-5" type="submit">Register</button>
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="signin.html">Go to login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
 </body>
 </html>
