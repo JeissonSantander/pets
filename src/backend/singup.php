@@ -12,19 +12,19 @@
 
     if($total >0){
         echo "<script>alert('Email already exists')</script>" ;
-        header("refresh:0;url=../signin.html");
+        header("refresh:0;url=../singup.html");
 
     }else{
 
         $sql = "
-        INSERT INTO users2 (fullname, email, password) 
+        INSERT INTO users (fullname, email, password) 
             VALUES ('$fullname', '$email','$enc_pass')
         ";
 
         $ans = pg_query($conn , $sql);
         if ($ans){
             echo "<script>alert('User has been registered')</script>";
-            header("refresh:0;url=../signin.html");
+            header("refresh:0;url=../signin.php");
         }else{
             
             echo "Error: " . pg_last_error();
