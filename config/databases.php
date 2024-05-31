@@ -12,7 +12,7 @@ $conn = pg_connect("host=$host dbname=$dbname user=$username password=$password"
 if(!$conn){
     die("Conecction error: ". pg_last_error());
 }else{
-    echo"Sucsess !!!";
+    //echo"Sucsess !!!";
 }
 
 ?>
